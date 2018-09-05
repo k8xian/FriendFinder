@@ -4,7 +4,7 @@
 
 * A compatibility-based "FriendFinder" application -- basically a dating app. This full-stack site takes in results from users' surveys, then compares the answers with those from other users. The app will then display the name and picture of the user with the best overall match. 
 
-* Deployment [link]()
+* Deployment [link](https://friendfinder-k8xian.herokuapp.com/)
 
 ## Instructions for running locally
 * clone this [repository](https://github.com/k8xian/FriendFinder.git) to your computer
