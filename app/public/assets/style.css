@@ -76,6 +76,10 @@ nav {
 h4{
   color: white;
   font-size: 2em;
+
+}
+
+h4.survey{
   background-color: rgba(0,0,0,.2);
   padding: 5px 20px;
 }
