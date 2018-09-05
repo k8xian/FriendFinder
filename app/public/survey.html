@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FriendFinder | Survey</title>
+    <!--Reset-->
+    <link rel="stylesheet" href="/assets/reset.css">
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!--Materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <!--Custom Styles-->  
+    <link rel="stylesheet" href="/assets/style.css">
+    <!--Favicon-->    
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+</head>
+
+<body>
+    <div class="container survey">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="/" class="brand-logo">FriendFinder</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div>
+                <p>Questions are on a scale of 1 to 5. <br>1 for strongly disagree, and 5 for strongly
+                    agree.
+                </p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div>
+                <h4>About You
+                </h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="name information">
+                <p>Name (required)</p>
+                <input type="text" id="name" placeholder="Your Name" class=" form-control col s6">
+            </div>
+        </div>
+        <div class="row">
+            <div class="matchPhoto information">
+                <p>Link to Photo Image (Required)</p>
+                <input type="text" id="photo" class="form-control col s6" placeholder="https://yourimage.com/yourimage.jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <h4>Survey Questions
+                </h4>
+            </div>
+            <div class="row">
+                <p>1. Spice World is the greatest movie of all time.</p>
+            </div>
+            <div class="input-field col s4">
+                <div class="row">
+                    <select class="selection"  id="userNumberChoice0">
+                        <option value="0" selected>choose</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <p>2. Climate Change is real.</p>
+            </div>
+            <div class="input-field col s4">
+                <div class="row">
+                    <select class="selection" col s3" id="userNumberChoice1">
+                        <option value="0" selected>choose</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <p>3. Zipper merging is an essential component of peace in our time.</p>
+            </div>
+            <div class="input-field col s4">
+                <div class="row">
+                    <select class="selection" id="userNumberChoice2">
+                        <option value="0" selected>choose</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <p>4. Craft beer is awesome.</p>
+            </div>
+            <div class="input-field col s4">
+                <div class="row">
+                    <select class="selection" id="userNumberChoice3">
+                        <option value="0" selected>choose</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <p>5. Wine is amazing.</p>
+            </div>
+            <div class="input-field col s4">
+                <div class="row">
+                    <select class="selection" id="userNumberChoice4">
+                        <option value="0" selected>choose</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <p>6. Cats are super cute.</p>
+            </div>
+            <div class="input-field col s4">
+                <div class="row">
+                    <select class="selection" id="userNumberChoice5">
+                        <option value="0" selected>choose</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <p>7. Dogs are super fun.</p>
+            </div>
+            <div class="input-field col s4">
+                <div class="row">
+                    <select class="selection" id="userNumberChoice6">
+                        <option value="0" selected>choose</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <p>8. Spicy food is tasty.</p>
+            </div>
+            <div class="input-field col s4">
+                <div class="row">
+                    <select class="selection" id="userNumberChoice7">
+                        <option value="0" selected>choose</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <p>9. Exercise is enjoyable.</p>
+            </div>
+            <div class="input-field col s4">
+                <div class="row">
+                    <select class="selection" id="userNumberChoice8">
+                        <option value="0" selected>choose</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <p>10. Buffy the Vampire Slayer is the greatest TV show of all time.</p>
+            </div>
+            <div class="input-field col s4">
+                <div class="row">
+                    <select class="selection" id="userNumberChoice9">
+                        <option value="0" selected>choose</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <a class="waves-effect waves-light btn" id="submitBtn"><i class="fas fa-user-friends"></i> Find your match!</a>
+    </div>
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Meet Your New Friend:</h4>
+        <h5 id="userMatch"></h5>
+        <img id="userMatchImage" width="300" src="">
+        <p class="modal-text"></p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="closeModal1">Close</a>
+      </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4 class="text-center">Please answer all questions</h4>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="closeModal2">Close</a>
+        </div>
+    </div>
+            
+    </div>
+    <footer>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2018 Kate Christian&nbsp;&nbsp;&nbsp;•
+            <a href="/api/friends" target="_blank">&nbsp;&nbsp;&nbsp;API&nbsp;&nbsp;</a> | 
+            <a href="" target="_blank">&nbsp;&nbsp;Github&nbsp;&nbsp;</a> |
+            <a href="k8xian.github.io" target="_blank">&nbsp;&nbsp;Portfolio</a>
+        </div>
+    </div>
+    </footer>
+</body>
+<script type="text/javascript">
+$( document ).ready(function() {
+    console.log( "ready!" );
+    $('.modal').modal();
+    $('select').formSelect();
+    var answersArray = [];
+    var invalid = false;
+    $("#name").val("");
+    $("#photo").val("");
+    $("#modal1").hide();
+    $(".selection").val("0");
+    $("#submitBtn").on("click", function (event) {
+        event.preventDefault();
+        for (let i = 1; i <= 10; i++) {
+            answersArray.push($("#userNumberChoice" + i).val());
+            if ( $("#userNumberChoice" + i).val() == 0) {
+                invalid = true;
+                console.log(invalid);
+            }
+        };
+        var newProfile = {
+            name: $("#name").val().trim(),
+            photo: $("#photo").val(),
+            scores: answersArray
+        };
+        console.log(newProfile);
+        if (invalid){
+            $("#modal2").show(); 
+        } else {
+        $.post("/api/friends", newProfile,
+            function (data) {
+                $('#userMatch').html(data.newFriendName);
+                $("#userMatchImage").attr("src", data.newFriendImage);
+                $("#modal1").show(); 
+            });
+        }
+    });
+
+    $(document.body).on("click", "#closeModal1", function () {
+        $("#name").val("");
+        $("#photo").val("");
+        $("#modal1").hide();
+        $(".selection").val("0");
+        answersArray = [];
+    });
+    $(document.body).on("click", "#closeModal2", function () {
+        $("#modal2").hide();
+        answersArray = [];
+        invalid = false;
+    });
+});
+</script>
+
+</html>
