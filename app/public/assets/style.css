@@ -26,6 +26,10 @@ body {
   margin-left: 20px;
 }
 
+.row .col.s6{
+  margin-left: 20px;
+}
+
 .select-wrapper {
   margin-top: -14px;
 }
@@ -33,6 +37,11 @@ body {
 p {
   line-height: 1.4em;
   color: var(--main-text);
+  padding-left: 20px;
+}
+
+p.first {
+  margin-top: 36px;
 }
 
 .select-wrapper input.select-dropdown {
@@ -65,7 +74,10 @@ nav {
 }
 
 h4{
-  color: var(--other-txt);
+  color: white;
+  font-size: 2em;
+  background-color: rgba(0,0,0,.2);
+  padding: 5px 20px;
 }
 
 .brand-logo {
@@ -102,6 +114,10 @@ input[type=text]::placeholder {
 .btn {
   background-color: var(--main-text);
   margin-top: 20px;
+}
+
+.btn.survey {
+  margin-left: 20px;
 }
 
 .btn:focus {
@@ -158,7 +174,8 @@ a:hover {
 }
 
 .container.survey{
-  background-color: rgba(255,255,255,.54);
+  background-color: rgba(255,255,255,.7);
+  box-shadow: 0 0 5px rgba(255,255,255,.8);
   padding: 2% 5% 60px;
 }
 
