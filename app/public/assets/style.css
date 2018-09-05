@@ -167,5 +167,6 @@ a:hover {
 }
 
 .home-row {
-  background-color: rgba(255,255,255,.4);
+  background-color: rgba(255,255,255,.65);
+  box-shadow: 0 0 5px rgba(255,255,255,.8);
 }
