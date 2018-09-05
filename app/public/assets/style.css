@@ -161,6 +161,7 @@ a:hover {
   padding-top: 24px;
   font-size: 5em;
   color: var(--other-txt);
+  padding-left: 0;
 }
 
 .home-text {
