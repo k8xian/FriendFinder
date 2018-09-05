@@ -2,7 +2,7 @@ var friendsArray =
 [
     {
         "name": "Buffy Summers",
-        "photo": "https://en.wikipedia.org/wiki/Buffy_Summers#/media/File:S514_Buffy.png",
+        "photo": "https://i.pinimg.com/originals/76/6e/f0/766ef0d6c5f53fa971d1bf99ab6e0b39.jpg",
         "scores": [
             5,
             2,

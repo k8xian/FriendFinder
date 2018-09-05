@@ -83,7 +83,7 @@
             </div>
             <div class="input-field col s4">
                 <div class="row">
-                    <select class="selection" col s3" id="userNumberChoice1">
+                    <select class="selection" id="userNumberChoice1">
                         <option value="0" selected>choose</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -218,7 +218,7 @@
     </div>
     <div id="modal1" class="modal">
       <div class="modal-content">
-        <h4>Meet Your New Friend:</h4>
+        <h4 class="dark" >Meet Your New Friend:</h4>
         <h5 id="userMatch"></h5>
         <img id="userMatchImage" width="300" src="">
         <p class="modal-text"></p>
@@ -229,7 +229,7 @@
     </div>
     <div id="modal2" class="modal">
         <div class="modal-content">
-            <h4 class="text-center">Please answer all questions</h4>
+            <h4 class="text-center dark">Please answer all questions</h4>
         </div>
         <div class="modal-footer">
             <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="closeModal2">Close</a>
@@ -281,7 +281,8 @@ $( document ).ready(function() {
             function (data) {
                 $('#userMatch').html(data.newFriendName);
                 $("#userMatchImage").attr("src", data.newFriendImage);
-                $("#modal1").show(); 
+                $("#modal1").show();
+                invalid = false;
             });
         }
     });
@@ -292,6 +293,7 @@ $( document ).ready(function() {
         $("#modal1").hide();
         $(".selection").val("0");
         answersArray = [];
+        invalid = false;
     });
     $(document.body).on("click", "#closeModal2", function () {
         $("#modal2").hide();
